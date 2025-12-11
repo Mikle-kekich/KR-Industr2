@@ -192,6 +192,14 @@ DELETE http://localhost:3000/api/tasks/1
 
 <img width="2239" height="1178" alt="image" src="https://github.com/user-attachments/assets/575e5698-a69e-44b5-8438-fe88865d51f8" />
 <img width="2239" height="1196" alt="image" src="https://github.com/user-attachments/assets/296d69f5-0e3d-4043-b6f6-9e1f2dcf102a" />
+<img width="2234" height="1185" alt="image" src="https://github.com/user-attachments/assets/e5f7c63e-9e3f-4f94-8d89-2f62d0fe77bd" />
+<img width="2239" height="1174" alt="image" src="https://github.com/user-attachments/assets/95b387d7-f67e-4175-9a66-bc69d280934f" />
+<img width="2239" height="1084" alt="image" src="https://github.com/user-attachments/assets/c7082be0-4c51-4154-8adf-d8826b7542c1" />
+<img width="2239" height="1198" alt="image" src="https://github.com/user-attachments/assets/b2d62a20-5a6a-459a-9274-b945d83af33f" />
+<img width="2222" height="1131" alt="image" src="https://github.com/user-attachments/assets/e03cbb09-f2e7-448d-87a6-9ba7bed98661" />
+
+
+
 
 
 

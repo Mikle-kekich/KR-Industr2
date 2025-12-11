@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Tasks API</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📋 Таблица дел на неделю</h1>
+            <p>Управление задачами через REST API</p>
+        </header>
+
+        <div class="content">
+            <div class="tasks-section">
+                <h2>Ваши задачи</h2>
+                <div id="tasks-list" class="tasks-list">
+                    <p class="loading">Загрузка задач...</p>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Добавить новую задачу</h2>
+                <form id="task-form">
+                    <div class="form-group">
+                        <label for="title">Название задачи:</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Описание:</label>
+                        <textarea id="description" name="description"></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="day">День недели:</label>
+                            <select id="day" name="day">
+                                <option value="пн">Понедельник</option>
+                                <option value="вт">Вторник</option>
+                                <option value="ср">Среда</option>
+                                <option value="чт">Четверг</option>
+                                <option value="пт">Пятница</option>
+                                <option value="сб">Суббота</option>
+                                <option value="вс">Воскресенье</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="priority">Приоритет:</label>
+                            <select id="priority" name="priority">
+                                <option value="low">Низкий</option>
+                                <option value="medium" selected>Средний</option>
+                                <option value="high">Высокий</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Добавить задачу</button>
+                </form>
+            </div>
+
+            <div class="filter-section">
+                <h2>Фильтры</h2>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="filter-day">День:</label>
+                        <select id="filter-day">
+                            <option value="">Все дни</option>
+                            <option value="пн">Понедельник</option>
+                            <option value="вт">Вторник</option>
+                            <option value="ср">Среда</option>
+                            <option value="чт">Четверг</option>
+                            <option value="пт">Пятница</option>
+                            <option value="сб">Суббота</option>
+                            <option value="вс">Воскресенье</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="filter-priority">Приоритет:</label>
+                        <select id="filter-priority">
+                            <option value="">Все приоритеты</option>
+                            <option value="low">Низкий</option>
+                            <option value="medium">Средний</option>
+                            <option value="high">Высокий</option>
+                        </select>
+                    </div>
+
+                    <button type="button" class="btn btn-secondary" onclick="loadTasks()">Применить фильтры</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>

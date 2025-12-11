@@ -1,0 +1,69 @@
+### Variables
+@host = http://localhost:3000
+@contentType = application/json
+
+### ==================== GET REQUESTS ====================
+
+### Получить все задачи
+GET {{host}}/api/tasks
+
+### Получить все задачи на понедельник
+GET {{host}}/api/tasks?day=пн
+
+### Получить задачи с высоким приоритетом
+GET {{host}}/api/tasks?priority=high
+
+### Получить задачу по ID
+GET {{host}}/api/tasks/1
+
+### Получить все задачи на вторник
+GET {{host}}/api/tasks/day/вт
+
+### ==================== POST REQUESTS ====================
+
+### Создать новую задачу
+POST {{host}}/api/tasks
+Content-Type: {{contentType}}
+
+{
+  "title": "Подготовить отчёт",
+  "description": "Квартальный отчёт по продажам",
+  "day": "пн",
+  "priority": "high",
+  "completed": false
+}
+
+### Создать задачу с минимальными полями
+POST {{host}}/api/tasks
+Content-Type: {{contentType}}
+
+{
+  "title": "Простая задача"
+}
+
+### ==================== PUT REQUESTS ====================
+
+### Обновить задачу (отметить как выполненную)
+PUT {{host}}/api/tasks/1
+Content-Type: {{contentType}}
+
+{
+  "completed": true
+}
+
+### Обновить название и приоритет
+PUT {{host}}/api/tasks/2
+Content-Type: {{contentType}}
+
+{
+  "title": "Обновленное название",
+  "priority": "low"
+}
+
+### ==================== DELETE REQUESTS ====================
+
+### Удалить задачу
+DELETE {{host}}/api/tasks/1
+
+### Удалить все задачи
+DELETE {{host}}/api/tasks?confirm=true

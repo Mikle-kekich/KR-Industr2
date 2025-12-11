@@ -1,0 +1,41 @@
+{
+  "name": "weekly-tasks-api",
+  "version": "1.0.0",
+  "description": "Express.js приложение для управления задачами на неделю",
+  "main": "app.js",
+  "scripts": {
+    "start": "node bin/www",
+    "dev": "nodemon bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "api",
+    "rest",
+    "tasks",
+    "nodejs"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/weekly-tasks-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/username/weekly-tasks-api/issues"
+  },
+  "homepage": "https://github.com/username/weekly-tasks-api#readme"
+}

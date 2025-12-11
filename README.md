@@ -19,7 +19,7 @@ Express.js приложение для управления задачами н�
 
 ```bash
 # Клонирование репозитория
-git clone https://github.com/username/weekly-tasks-api.git
+git clone https://github.com/Mikle-kekich/KR-Industr2.git
 cd weekly-tasks-api
 
 # Установка зависимостей
